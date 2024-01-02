@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAP</title>
+    <style>
+        
+        table td, th{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aplikasi UAP</h1>
+    <table id="barangTable">
+        <th>Kode</th>
+        <th>Nama</th>
+        <th>Harga</th>
+    </table>
+    <form onsubmit="tambahTransaksi(event)">
+    <h3>Input Barang</h3>
+    <label>Kode Barang: </label>
+    <input type="text" id="kodeInput" placeholder="Masukkan Kode..." required>
+    <label>Jumlah Barang: </label>
+    <input type="number" id="quantityInput" min="1" placeholder="Masukkan Jumlah..." required>
+        <button type="submit">submit</button>
+    </form>
+    <script src="uap.js"></script>
+</body>
+</html>
